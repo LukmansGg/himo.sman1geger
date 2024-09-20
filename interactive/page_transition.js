@@ -53,7 +53,7 @@ elements.forEach(element => {
     pageExit();
 
     setTimeout(() => {
-      window.location.href = `/page_${element.innerHTML}`;
+      window.location.href = `page_${element.innerHTML}.html`;
     },
       2000)
   })
