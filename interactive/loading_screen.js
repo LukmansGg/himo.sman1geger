@@ -4,7 +4,7 @@ const CONFIG = {
     titleAnimationClass: 'move-up-fast',
     animationDelay: 2000,
     titleDelay: 50,
-    nextPageUrl: '/page_1',
+    nextPageUrl: 'page_1.html',
     elementSelector: '.circle-full-1, .box-title, .circle-grey-1, .circle-grey-2, .description, .tahun',
     special: '.circle-logo',
     titleSelector: '.title'
