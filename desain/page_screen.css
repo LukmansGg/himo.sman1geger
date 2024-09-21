@@ -482,6 +482,10 @@ body {
         right: 15px;
         bottom: 200px;
     }
+
+    .bukti-button {
+        bottom: 10px;
+    }
 }
 
 .hover-page {
