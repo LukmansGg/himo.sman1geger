@@ -449,7 +449,7 @@ body {
     }
 
     .very_small_title {
-        top: 0px;
+        top: 10px;
     }
 
     .logo {
@@ -481,6 +481,10 @@ body {
         position: fixed;
         right: 15px;
         bottom: 200px;
+    }
+
+    .bigger_description-more-down {
+        top: 100px;
     }
 
     .bukti-button {
