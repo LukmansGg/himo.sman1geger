@@ -97,7 +97,7 @@ body {
 
 .bigger_description {
     font-family: "Libre Baskerville";
-    max-width: 80%;
+    max-width: 85%;
     font-style: normal;
     position: absolute;
     left: 35px;
@@ -177,7 +177,7 @@ body {
 
 .show_navigation_phone {
     width: 50%;
-    background-color: #2e266dd5;
+    background-color: #2e266d8f;
     z-index: 100;
     transition:
         width 1s ease-in-out,
@@ -209,11 +209,12 @@ body {
 }
 
 .doc_1_foto {
-    position: absolute;
+    position: relative;
     width: 310px;
     height: 200px;
     right: 0px;
-    bottom: -400px;
+    padding: 10px;
+    bottom: -600px;
 }
 
 .navigator {
