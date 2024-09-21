@@ -213,7 +213,8 @@ body {
     width: 310px;
     height: 200px;
     right: 0px;
-    padding: 10px;
+    padding: 5px;
+    padding-top: 50px;
     bottom: -600px;
 }
 
@@ -433,6 +434,9 @@ body {
     .bigger_description {
         max-width: 55%;
         font-size: 25px;
+        left: 100px;
+        position: relative;
+        top: 50px;
     }
 
     .circle-full-1 {
@@ -456,12 +460,6 @@ body {
         height: 320px;
         transform: scale(1);
     }
-
-    .bigger_description {
-        left: 100px;
-        top: 170px;
-    }
-
     .title {
         left: 100px;
     }
