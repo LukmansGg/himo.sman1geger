@@ -214,8 +214,8 @@ body {
     height: 200px;
     right: 0px;
     padding: 5px;
-    padding-top: 50px;
-    bottom: 750px;
+    padding-top: 100px;
+    bottom: -850px;
 }
 
 .navigator {
