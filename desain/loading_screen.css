@@ -64,14 +64,14 @@
 }
 
 .title {
-    position: relative;
+    position: absolute;
     font-family: "Space Mono", sans-serif;
     font-size: 50px;
     height: 80px;
     font-style: normal;
-    top: -240px;
+    top: 0px;
     opacity: 0.9;
-    left: 10px;
+    left: 45px;
     overflow: hidden;
 }
 
@@ -163,7 +163,7 @@
     }
     to {
         width: 300px;
-        left: 10px;
+        left: 45px;
     }
 }
 
