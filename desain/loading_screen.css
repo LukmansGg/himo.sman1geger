@@ -311,7 +311,7 @@
     }
 
     .title {
-        position: absolute;
+        position: relative;
         font-size: 70px;
         top: 170px;
         left: 350px;
