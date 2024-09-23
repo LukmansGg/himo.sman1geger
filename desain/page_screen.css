@@ -165,7 +165,7 @@ body {
 }
 
 .phone-menu-nav-bar {
-    gap: 10px;
+    gap: 13px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -396,7 +396,7 @@ body {
 .small_logo {
     position: absolute;
     top: 5px;
-    left: calc(100% - 150px);
+    left: calc(100% - 110px);
     width: 120px;
     height: 122px;
     z-index: 15;
@@ -423,6 +423,10 @@ body {
         visibility: hidden;
     }
 
+    .phone-menu-nav-bar {
+        visibility: hidden;
+    }
+    
     .navigator {
         visibility: visible;
     }
