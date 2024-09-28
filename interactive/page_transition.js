@@ -1,4 +1,4 @@
-const allElementC = ".title, .small_title, .document, .is-logo, .bigger_description, .description, .circle-full-1, .circle-grey-3, .circle-logo, .circle-broder-down"
+const allElementC = ".title, .small_title, .document, .is-logo, .bigger_description, .description, .doct_foto, .circle-full-1, .circle-grey-3, .circle-logo, .circle-broder-down"
 const allElement = document.querySelectorAll(allElementC);
 
 const thisPage = document.querySelectorAll('.this-page');
