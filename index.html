@@ -1,55 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HIMO SMAGER</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMO SMAGER</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="desain/loading_screen.css" />
-    </head>
-    <body>
-        <div class="background loading-element">
-            <div class="circle-full-1 loading-element">
+    <link rel="stylesheet" href="desain/loading_screen.css">
+    <link rel="stylesheet" href="desain/page_screen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="home-page page" style="overflow: unset;">
+        <div class="scrol-anim">
+            <div class="circle-full-1 loading-elementt">
                 <svg width="300" height="300">
                     <circle cx="100" cy="200" r="100" fill="#2E266D" />
-                    <circle
-                        cx="100"
-                        cy="200"
-                        r="120"
-                        fill="none"
-                        stroke="#2E266D"
-                        stroke-width="2"
-                    />
+                    <circle cx="100" cy="200" r="120" fill="none" stroke="#2E266D" stroke-width="2" />
                 </svg>
             </div>
 
-            <div class="circle-grey circle-grey-1 loading-element"></div>
-            <div class="circle-grey circle-grey-2 loading-element"></div>
+            <div class="circle-grey circle-grey-1 scrol-anim"></div>
+            <div class="circle-grey circle-grey-2 scrol-anim"></div>
             <div class="circle-logo"></div>
             <div class="box-title"></div>
         </div>
         <div class="utama">
-            <img class="logo" src="assets/himo2.png" />
+            <img class="logo" src="assets/himo2.png" alt="HIMO Logo">
             <h1 class="title">PORTFOLIO</h1>
-            <p class="description loading-element">
-                Himpunan Musyawarah OSIS SMA Kabupaten Madiun<span class="blink"
-                    >_</span
-                >
-            </p>
-            <p class="tahun loading-element">2024/2025</p>
+            <p class="description scrol-anim">Himpunan Musyawarah OSIS SMA Kabupaten Madiun<span class="blink">_</span></p>
+            <p class="tahun scrol-anim">2024/2025</p>
         </div>
+    </div>
 
-        <script src="interactive/refreshed.js"></script>
-        <script src="interactive/loading_screen.js"></script>
-    </body>
+    <div class="page-1 page child-page">
+       <div class="circle-full-1 hidden">
+            <svg width="300" height="300">
+                <circle cx="100" cy="200" r="100" fill="#2E266D" />
+                <circle cx="100" cy="200" r="120" fill="none" stroke="#56aeff" stroke-width="2" />
+            </svg>
+        </div>
+        <div class="circle-logo hidden"></div>
+        <div class="utama">
+            <img class="logo" src="assets/himo2.png" alt="HIMO Logo">
+            <h1 class="title hidden">HIMO</h1>
+            <div class="hightline-title" style="position: absolute;">
+                <h1 class="small_title hightline-title-text">HIMO</h1>
+            </div>
+            <div class="description hidden" style="text-align: justify;">
+                <p>HIMO merupakan singkatan dari Himpunan Musyawarah OSIS. HIMO didirikan oleh Dinas Pendidikan Provinsi Jawa Timur melalui Bidang PPSMA Provinsi Jawa Timur. Pengurus dari HIMO sendiri adalah hanya SMA saja dan beranggotakan perkumpulan Ketua OSIS SMA Negeri dan Swasta seluruh Provinsi Jawa Timur.</p>
+                <p>HIMO Jawa Timur didirikan di Kota Surabaya pada Tahun 2020 dan dilantik secara langsung oleh Kepala Dinas Pendidikan Provinsi Jawa Timur. Tetapi sebelum berganti nama menjadi Himpunan Musyawarah OSIS, organisasi ini diberi nama Musyawarah Kerja Ketua OSIS (MKKO) yang didirikan pada tahun 2019, perubahan ini didasarkan nama MKKO dianggap hanya organisasi yang mencangkup ketua OSIS, sedangkan perkumpulan ini adalah satu komponen yang didasari oleh OSIS wilayah Jawa Timur . HIMO tidak dibentuk dipusat saja tetapi juga dibentuk di seluruh Kabupaten dan Kota se-Jawa Timur.</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="page-2 page child-page" style="overflow: unset;">
+        <div class="circle-grey-3"></div>
+        <div class="utama">
+            
+            <h1 class="title hidden">HIMO</h1>
+            <div class="hightline-title" style="position: absolute">
+                <h1 class="small_title hightline-title-text">HIMO</h1>
+            </div>
+            <br>
+            <h1 class="small_title hidden" style="top: 80px;">Kabupaten Madiun</h1>
+            <div class="bigger_description-more-down bigger_description hidden" style="text-align: justify; padding-top: 100px; max-width: 80%;">
+                <p>HIMO Kabupaten Madiun adalah bagian dari organisasi HIMO SMA Jawa Timur yang terletak pada Bakorwil 1. HIMO Kabupaten Madiun berdiri sejak tahun 2019 namun secara kepengurusan resmi baru berdiri di tahun 2023/2024, secara resmi sekarang baru mencaoaci generasi kedua.  HIMO Kabupaten Madiun terdiri dari 33 orang anggota dari 10 SMAN dan 1 SMAS se Kabupaten Madiun.</p>
+            </div>
+            <div style="position: relative;">
+                <div style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.9), transparent); backdrop-filter: blur(5px);"></div>
+                <img class="foto_background" src="assets/himo_organitation.png" style="filter: blur(2px); mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%); height: 120vh; top: -200px;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="page-3 page child-page" style="overflow: unset;">
+        <div class="circle-grey circle-grey-1 loading-element"></div>
+        <div class="loading_cont">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader_right">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                  </filter>
+            <linearGradient id="BlueGray">
+                <stop offset="0%"  stop-color="#56AEFF"/>
+                <stop offset="50%" stop-color="#8E9AAF"/>
+                <stop offset="100%" stop-color="#2E266D"/>
+            </linearGradient>
+          </defs>
+          <!-- Left blobs -->
+         
+          <!-- Right blobs - only 2 circles -->
+          <g class="background-blobs right-blobs" opacity="0.1" transform="translate(100, 50)">
+            <circle cx="650" cy="500" r="90" fill="#56AEFF" opacity="1" />
+            <circle cx="700" cy="400" r="60" fill="#2E266D" opacity="1" />
+          </g>
+        </div>
+        <div class="loading_cont">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <linearGradient id="MyGradient">
+                    <stop offset="0%"  stop-color="#0052D4"/>
+                    <stop offset="50%" stop-color="#4364F7"/>
+                    <stop offset="100%" stop-color="#6FB1FC"/>
+                </linearGradient>
+            </defs>
+            <mask id="maska">
+                <g class="blobs">
+                  <circle class="blob" cx="440" cy="250" r="30" transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="500" cy="320" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="300" cy="390" r="40"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="380" cy="390" r="80"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="470" cy="450" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="280" cy="280" r="45" transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="520" cy="200" r="35" transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="420" cy="180" r="25" transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <circle class="blob" cx="350" cy="450" r="30" transform="rotate(0) translate(0, 0) rotate(0)"/>
+                  <path class="blob" d="M 400,300 Q 450,250 400,200 T 400,100" />
+                </g>
+            </mask>
+            <defs>
+                <linearGradient id="MyGradient">
+                    <stop offset="0%"  stop-color="#0052D4"/>
+                    <stop offset="50%" stop-color="#4364F7"/>
+                    <stop offset="100%" stop-color="#6FB1FC"/>
+                </linearGradient>
+                <linearGradient id="BlueGray">
+                    <stop offset="0%"  stop-color="#56AEFF"/>
+                    <stop offset="50%" stop-color="#8E9AAF"/>
+                    <stop offset="100%" stop-color="#2E266D"/>
+                </linearGradient>
+            </defs>
+            <g class="background-blobs left-blobs" opacity="0.2">
+                <circle cx="250" cy="350" r="100" fill="#8E9AAF" />
+                <circle cx="450" cy="150" r="80" fill="#56AEFF" />
+                <circle cx="550" cy="400" r="60" fill="#2E266D" />
+                <path d="M 300,200 Q 350,150 300,100 T 300,0" fill="#56AEFF" opacity="0.2" />
+              </g>
+            <rect x="200" y="200" mask="url(#maska)" fill="url(#MyGradient)" width="400" height="400" />
+            </svg>  
+        </div>
+        <div class="utama">
+            <h1 class="title hidden" style="color: #4154f1; top: -300px; left: 25%;">PROGRAM KAMI</h1>
+            <h1 class="very_small_title small_title hidden" style="font-size: 20px; top: -10px;">1. Rapat Rutin</h1>
+            <div class="bigger_description hidden" style="text-align: justify;font-size: 18px; top: 50px; max-width: 80%;">
+                <p>Rapat rutin pengurus Himo Kabupaten Madiun diselenggarakan rutin baik secara offline maupun online melalui video conference. Agenda utama rapat meliputi evaluasi kinerja bulan lalu, pembahasan rencana program kerja yang akan datang. Rapat ini diharapkan mampu memperkuat koordinasi internal dan mempercepat realisasi program kerja yang direncanakan.</p>
+            </div>
+        </div>
+        
+        <div class="galery">
+            <div class="slide-container">
+                <div class="slide-wrapper">
+                    <div class="galery-item">
+                        <img src="assets/page_2_0.jpg" alt="Documentation 1">
+                        <div class="galery-overlay">
+                            <span class="galery-title">Documentation 1</span>
+                        </div>
+                    </div>
+                    <div class="galery-item">
+                        <img src="assets/page_2_1.jpg" alt="Documentation 2">
+                        <div class="galery-overlay">
+                            <span class="galery-title">Documentation 2</span>
+                        </div>
+                    </div>
+                    <div class="galery-item">
+                        <img src="assets/page_2_2.jpg" alt="Documentation 3">
+                        <div class="galery-overlay">
+                            <span class="galery-title">Documentation 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide-indicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-4 page child-page">
+        <div class="image-container">
+            <img class="foto_background image-with-gradient" src="assets/page_2_0.jpg" />
+            <div class="backdrop-filter"></div>
+        </div>
+        <div class="circle-broder-down hidden"></div>
+        <div class="utama">
+            
+        <h1
+            class="very_small_title small_title hidden"
+            style="font-size: 20px; color: white;"
+        >
+            2. Kerja Sama Pengisian dan Penyampaian Suara Anak Kabupaten
+            Madiun
+        </h1>
+        <div
+            class="very_bigger_description bigger_description hidden"
+            style="max-width: 80%; text-indent: unset; position: absolute; bottom: 10px; top: unset; text-align: justify; font-size: 18px; color: white;"
+        >
+            <p>
+                Forum Anak Kabupaten Madiun akan melaksanakan kegiatan
+                Penyampaian Suara Anak melalui pengisian SAMARA "Saatnya
+                Anak Madiun Bersuara". Kegiatan ini akan disosialisasikan
+                melalui perwakilan Ketua OSIS Se-Kabupaten Madiun yang
+                dinaungi oleh Organisasi HIMO. Kemudian link akan di isi
+                oleh seluruh siswa/i SMA di Kabupaten Madiun dengan minimal
+                responden 250 anak. Bukti dari pengisian akan dikumpulkan
+                melalui Google Drive yang sudah disediakan panitia serta
+                media sosial masing-masing sekolah.
+            </p>
+        </div>
+        <a
+            href="https://drive.google.com/drive/folders/1CfCjQwzN1RH3DAbroigBpv1HWMnkUJv3"
+            class="bukti-button"
+            style="color: white; font-family: 'Chewy'"
+            >Lihat Dokumentasi</a>
+        </div>
+    </div>
+
+    <div class="page-5 page child-page" style="top: -280px; overflow: unset;">
+        <div class="circle-broder-down hidden"></div>
+        <div class="utama">
+            <h1
+                class="very_small_title small_title hidden"
+                style="font-size: 20px"
+            >
+                3. HIMO Clean Up Day
+            </h1>
+            <div
+                class="bigger_description hidden"
+                style="text-align: justify; font-size: 18px"
+            >
+                <p>
+                    HIMO CLEAN UP DAY adalah sebuah kegiatan untuk membersihkan
+                    pantai, sungai dan lingkungan sekitar dari sampah yang
+                    menumpuk, untuk sedikit mengurangi jumlah sampah yang ada di
+                    tempat tersebut. Bertepatan dengan Hari Lingkungan Hidup
+                    Himo Kabupaten Madiun mengadakan clean up day di sungai
+                    daerah Bangun Gunungsari Kabupaten Madiun. Kondisi sungai
+                    yang kotor mengakibatkan berbagai masalah seperti meluapnya
+                    air karena aliran yang tidak lancar, dengan adanya kegiatan
+                    clean up disungai ini diharapkan dapat mengurangi dampak
+                    akibat banyaknya sampah
+                </p>
+            </div>
+            <a
+                href="https://www.instagram.com/reel/C9CQlI2ylHu/?igsh=aGZkeDlmbDY0ODhk"
+                class="bukti-button"
+                style="color: white; font-family: 'Chew'"
+                >Lihat Dokumentasi
+            </a>
+        </div>
+    </div>
+
+    <div class="page-6 page child-page">
+        <div class="circle-broder-down hidden"></div>
+        <div class="utama">
+            <h1
+                class="very_small_title small_title hidden"
+                style="font-size: 20px"
+            >
+                4. PESONA RAMADAN
+            </h1>
+            <div
+                class="bigger_description hidden"
+                style="text-align: justify; font-size: 18px"
+            >
+                <p>
+                    Pesona Ramadan merupakan kegiatan yang diselenggarakan oleh
+                    HIMO Jawa Timur. Kegiatan ini berisi tentang berbagai lomba
+                    menarik yang dapat diikuti oleh Kabupaten dan Kota di Jawa
+                    Timur. Pada ramadan tahun ini, terdapat lomba tartil dan
+                    lomba membuat poster digital. HIMO Kabupaten Madiun juga
+                    turut berpartisipasi dalam acara ini.
+                </p>
+            </div>
+            <a
+                href="https://www.instagram.com/p/C5fHccUyV9r/?igsh=cmoxcW0yd3ZxcG0w"
+                class="bukti-button"
+                style="color: white; font-family: 'Chewy'"
+                >Lihat Dokumentasi</a
+            >
+        </div>
+    </div>
+
+    <div class="page-7 page child-page">
+        <div class="circle-broder-down hidden"></div>
+        <div class="utama">
+            <h1 class="very_small_title small_title hidden" style="font-size: 20px;">5. Reorganisasi HIMO SMA Kabupaten Madiun 2024</h1>
+            <div class="bigger_description hidden" style="text-align: justify;font-size: 18px;">
+                <p>Reorganisasi HIMO SMA Kab. Madiun 2024 diikuti oleh 10 SMAN dan 1 SMAS se Kab. Madiun, dilaksanakan selama 2 hari yakni pada 15-17 Januari 2024 di SMAN 1 Mejayan Kabupaten Madiun. Pada kegiatan Reorganisasi HIMO SMA Kabupaten Madiun ini akan membentuk kepengurusan dari perwakilan SMAN/SMAS se Kabupaten Madiun. Dalam acara reorgansiasi ini terdiri dari beberapa rangkaian antara lain pengisian portofolio dan tahap wawancara, nantinya hasil dari pengisian portofolio dan wawancara akan menentukan kepengurusan baru HIMO SMA Kabupaten Madiun. Pada acara Reorganisasi ini dipilih pula Ketua Umum HIMO SMA Kab. Madiun dan Delegasi Kabupaten Madiun untuk menjadi pengurus HIMO JATIM dalam kepengurusan HIMO 2024/2025</p>
+                    
+            </div>
+            <a href="https://www.instagram.com/p/C2PfLunPEkc/?igsh=MWY5MGs4cXBsbnRncA==" class="bukti-button" style="color: white; font-family: 'Chewy';">Lihat Dokumentasi</a>
+        </div>
+    </div>
+
+    <div class="page-8 page child-page">
+        <div class="circle-broder-down hidden"></div>
+        <div class="utama">
+            <h1
+                class="very_small_title small_title hidden"
+                style="font-size: 20px;"
+            >
+                6. LIMITS
+            </h1>
+            <div
+                class="bigger_description hidden"
+                style="text-align: justify; font-size: 18px"
+            >
+                <p>
+                    Oimpiade Matematika, IPA, dan Bahasa Inggris atau biasa
+                    dikenal dengan “LIMITS” merupakan salah satu program kerja
+                    OSIS SMAN 1 Geger Seksi Bidang Prestasi Akademik, Seni dan
+                    Olahraga. Pada tahun 2024 dilaksanakan hari ini, Minggu 18
+                    Februari 2024. Pada tahun 2024 Limits mengambil tema “Exude
+                    Your Confident, Be Proud of Yourself, and Break Your
+                    Limits”. Para pemenang akan mendapatkan hadiah uang tunai
+                    dan Golden Ticket untuk masuk di SMAN 1 Geger. Pengurus HIMO
+                    SMA Kab. Madiun juga diundang untuk menghadiri kegiatan
+                    Limits. Diharapkan dengan hadirnya Pengurus HIMO dapat
+                    mengenalkan Organisasi HIMO pada peserta olimpiade serta
+                    menjadi ajang silaturahmi pada pengurus HIMO SMA Kab.
+                    Madiun.
+                </p>
+            </div>
+            <a
+                href="https://drive.google.com/drive/folders/1Agn99_2RDxNRWG9LoGY6xMelZAYdCK1l"
+                class="bukti-button"
+                style="color: white; font-family: 'Chewy'"
+                >Lihat Dokumentasi</a
+            >
+        </div>
+    </div>
+
+
+    <script src="interactive/refreshed.js"></script>
+    <script src="interactive/loading_screen.js"></script>
+    <script src="interactive/page_transition.js"></script>
+</body>
 </html>
