@@ -139,3 +139,83 @@ setInterval(() => {
     }, 2000)
   }
 }, 5000)
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slideWrapper = document.querySelector('.slide-wrapper');
+  const indicators = document.querySelectorAll('.indicator');
+  let currentSlide = 0;
+  let startX = 0;
+  let isDragging = false;
+
+  // Touch events
+  slideWrapper.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+  });
+
+  slideWrapper.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const currentX = e.touches[0].clientX;
+      const diff = startX - currentX;
+      
+      if (Math.abs(diff) > 50) { // Minimum swipe distance
+          if (diff > 0 && currentSlide < indicators.length - 1) {
+              nextSlide();
+          } else if (diff < 0 && currentSlide > 0) {
+              prevSlide();
+          }
+          isDragging = false;
+      }
+  });
+
+  slideWrapper.addEventListener('touchend', () => {
+      isDragging = false;
+  });
+
+  // Indicator clicks
+  indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+          goToSlide(index);
+      });
+  });
+
+  function goToSlide(index) {
+      if (index === currentSlide) return;
+      
+      const direction = index > currentSlide ? 'next' : 'prev';
+      slideWrapper.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Update indicators
+      indicators[currentSlide].classList.remove('active');
+      indicators[index].classList.add('active');
+      
+      // Add animation class
+      slideWrapper.classList.add(`slide-${direction}`);
+      setTimeout(() => {
+          slideWrapper.classList.remove(`slide-${direction}`);
+      }, 500);
+
+      currentSlide = index;
+  }
+
+  function nextSlide() {
+      if (currentSlide < indicators.length - 1) {
+          goToSlide(currentSlide + 1);
+      }
+  }
+
+  function prevSlide() {
+      if (currentSlide > 0) {
+          goToSlide(currentSlide - 1);
+      }
+  }
+
+  // Auto-advance slides (optional)
+  setInterval(() => {
+      if (currentSlide < indicators.length - 1) {
+          nextSlide();
+      } else {
+          goToSlide(0);
+      }
+  }, 5000); // Change slides every 5 seconds
+});
