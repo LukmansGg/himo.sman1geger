@@ -361,7 +361,7 @@
 
         // STAGE 1: Move to Center & Scale Up at 100vh
         gsap.to(".logo-utama", {
-            top: 130, 
+            top: 100, 
             left: 0, // Move to center vertically
             scale: 1, // Grow bigger
             duration: 1,
@@ -370,8 +370,8 @@
                 trigger: ".logo-utama",
                 start: "top 100", // When scroll reaches 150vh
                 end: "top 200",
-                onLeave: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: window.innerHeight / 2 - 100, duration: 1, ease: "power2.out" }),
-                onLeaveBack: () => gsap.to(".logo-utama", { scale: 1, top: 130, left: 0, duration: 1, ease: "power2.out" }),
+                onLeave: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: 300, duration: 1, ease: "power2.out" }),
+                onLeaveBack: () => gsap.to(".logo-utama", { scale: 1, top: 100, left: 0, duration: 1, ease: "power2.out" }),
                 pin: true
             }
         });
@@ -379,15 +379,15 @@
         gsap.to(".logo-utama", {
             scale: 2,
             left: window.innerWidth / 2 - 100,
-            top: window.innerHeight / 2 - 100,
+            top: 300,
             duration: 1,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".logo-utama",
                 start: "top 0", // When scroll reaches 150vh
                 end: "top 200",
-                onLeave: () => gsap.to(".logo-utama", { scale: 1, left: window.innerWidth - 380, top: window.innerHeight / 2 - 100, duration: 1, ease: "power2.out" }),
-                onLeaveBack: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: 130, duration: 1, ease: "power2.out" }),
+                onLeave: () => gsap.to(".logo-utama", { scale: 1, left: window.innerWidth - 380, top: 500, duration: 1, ease: "power2.out" }),
+                onLeaveBack: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: 300, duration: 1, ease: "power2.out" }),
                 pin: true
             }
         });
