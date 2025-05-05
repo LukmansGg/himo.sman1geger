@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="home-page page" style="overflow: unset;">
@@ -29,7 +31,7 @@
             <div class="box-title"></div>
         </div>
         <div class="utama">
-            <img class="logo" src="assets/himo2.png" alt="HIMO Logo">
+            <img class="logo logo-utama" src="assets/himo2.png" alt="HIMO Logo">
             <h1 class="title">PORTFOLIO</h1>
             <p class="description scrol-anim">Himpunan Musyawarah OSIS SMA Kabupaten Madiun<span class="blink">_</span></p>
             <p class="tahun scrol-anim">2024/2025</p>
@@ -354,5 +356,43 @@
     <script src="interactive/refreshed.js"></script>
     <script src="interactive/loading_screen.js"></script>
     <script src="interactive/page_transition.js"></script>
+        <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // STAGE 1: Move to Center & Scale Up at 100vh
+        gsap.to(".logo-utama", {
+            top: 130, 
+            left: 0, // Move to center vertically
+            scale: 1, // Grow bigger
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".logo-utama",
+                start: "top 100", // When scroll reaches 150vh
+                end: "top 200",
+                onLeave: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: window.innerHeight / 2 - 100, duration: 1, ease: "power2.out" }),
+                onLeaveBack: () => gsap.to(".logo-utama", { scale: 1, top: 130, left: 0, duration: 1, ease: "power2.out" }),
+                pin: true
+            }
+        });
+
+        gsap.to(".logo-utama", {
+            scale: 2,
+            left: window.innerWidth / 2 - 100,
+            top: window.innerHeight / 2 - 100,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".logo-utama",
+                start: "top 0", // When scroll reaches 150vh
+                end: "top 200",
+                onLeave: () => gsap.to(".logo-utama", { scale: 1, left: window.innerWidth - 380, top: window.innerHeight / 2 - 100, duration: 1, ease: "power2.out" }),
+                onLeaveBack: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: 130, duration: 1, ease: "power2.out" }),
+                pin: true
+            }
+        });
+
+        
+    </script>
 </body>
 </html>
