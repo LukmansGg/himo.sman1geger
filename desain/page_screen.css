@@ -610,6 +610,10 @@
     transform: translateY(0);
 }
 
+.galery-item:hover .slide-wrapper {
+    bottom: 50px;
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
     .galery {
