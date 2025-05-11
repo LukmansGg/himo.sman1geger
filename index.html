@@ -373,6 +373,7 @@
   // Animasi 1: scroll dari 0 sampai 150vh
   tl.to(".logo-utama", {
     top: 300,
+    zIndex: 9999,
     left: () => window.innerWidth / 2 - 100,
     scale: 2,
     ease: "power2.out",
@@ -382,6 +383,7 @@
   // Animasi 2: scroll dari 150vh sampai 300vh
   tl.to(".logo-utama", {
     top: 500,
+    zIndex: 9999,
     left: () => window.innerWidth - 380,
     scale: 1,
     ease: "power2.out",
