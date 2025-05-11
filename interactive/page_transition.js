@@ -11,7 +11,7 @@ thisPage.forEach(element => {
 const phoneHover = document.querySelector(".phone-menu");
 const phoneMenuNav = document.querySelector(".phone-menu-nav-bar");
 const phoneMenuArr = document.querySelector(".phone-menu-arrow");
-phoneMenuNav.style.visibility = "hidden";
+
 phoneHover.addEventListener("click", () => {
   if (phoneHover.classList.contains("show_navigation_phone")) {
     phoneHover.classList.remove("show_navigation_phone")
