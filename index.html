@@ -359,33 +359,36 @@
     <script>
   gsap.registerPlugin(ScrollTrigger);
 
+  <script>
+  gsap.registerPlugin(ScrollTrigger);
+
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".logo-utama",
-      start: "top top",        // saat elemen mencapai bagian atas viewport
-      end: "+=2000",           // total durasi scroll 2000px
-      scrub: true,             // animasi berjalan bolak-balik sesuai scroll
-      pin: true,               // pin elemen selama animasi
+      start: "top top",         // saat logo menyentuh bagian atas viewport
+      end: "bottom+=300vh",     // scroll hingga 300vh
+      scrub: true,              // sinkron dengan scroll (smooth & reversible)
+      pin: true,                // tahan logo di tempat
       anticipatePin: 1
     }
   });
 
-  // Animasi 1: scroll 0–1000px (0–150vh kira-kira)
+  // Animasi 1: scroll dari 0 sampai 150vh
   tl.to(".logo-utama", {
     top: 300,
     left: () => window.innerWidth / 2 - 100,
     scale: 2,
     ease: "power2.out",
-    duration: 1
+    duration: 0.5
   });
 
-  // Animasi 2: scroll 1000–2000px (150–300vh kira-kira)
+  // Animasi 2: scroll dari 150vh sampai 300vh
   tl.to(".logo-utama", {
     top: 500,
-    left: window.innerWidth - 380,
+    left: () => window.innerWidth - 380,
     scale: 1,
     ease: "power2.out",
-    duration: 1
+    duration: 0.5
   });
 </script>
 
