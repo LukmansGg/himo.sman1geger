@@ -357,25 +357,38 @@
     <script src="interactive/loading_screen.js"></script>
     <script src="interactive/page_transition.js"></script>
     <script>
-          gsap.registerPlugin(ScrollTrigger);
-        
-          
-          gsap.to(".logo-utama", {
-            top: 300,
-            left: () => window.innerWidth / 2 - 100, // Center horizontal
-            scale: 2,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: ".logo-utama",
-              start: "top center",       // Mulai saat elemen mencapai tengah layar
-              end: "+=400",              // Animasi berlangsung sepanjang 400px scroll
-              scrub: true,               // Sinkron dengan scroll (maju & mundur)
-              pin: true,                 // Pin elemennya selama animasi
-              anticipatePin: 1           // Smooth pinning
-            }
-          });
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".logo-utama",
+      start: "top top",        // saat elemen mencapai bagian atas viewport
+      end: "+=2000",           // total durasi scroll 2000px
+      scrub: true,             // animasi berjalan bolak-balik sesuai scroll
+      pin: true,               // pin elemen selama animasi
+      anticipatePin: 1
+    }
+  });
+
+  // Animasi 1: scroll 0–1000px (0–150vh kira-kira)
+  tl.to(".logo-utama", {
+    top: 300,
+    left: () => window.innerWidth / 2 - 100,
+    scale: 2,
+    ease: "power2.out",
+    duration: 1
+  });
+
+  // Animasi 2: scroll 1000–2000px (150–300vh kira-kira)
+  tl.to(".logo-utama", {
+    top: 500,
+    left: window.innerWidth - 380,
+    scale: 1,
+    ease: "power2.out",
+    duration: 1
+  });
 </script>
+
 
 </body>
 </html>
