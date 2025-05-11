@@ -358,14 +358,14 @@
     <script src="interactive/page_transition.js"></script>
     <script>
   gsap.registerPlugin(ScrollTrigger);
-        
+
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".logo-utama",
-      start: "top top",         // saat logo menyentuh bagian atas viewport
-      end: "bottom+=300vh",     // scroll hingga 300vh
-      scrub: true,              // sinkron dengan scroll (smooth & reversible)
-      pin: true,                // tahan logo di tempat
+      start: "top top",
+      end: "+=300vh",           // hanya sampai 300vh scroll
+      scrub: true,
+      pin: true,
       anticipatePin: 1
     }
   });
@@ -388,6 +388,7 @@
     duration: 0.5
   });
 </script>
+
 
 
 </body>
