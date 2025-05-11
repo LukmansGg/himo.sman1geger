@@ -363,14 +363,22 @@
     scrollTrigger: {
       trigger: ".logo-utama",
       start: "top top",
-      end: "+=300vh",           // hanya sampai 300vh scroll
+      end: "+=300vh",           // only up to 300vh scroll
       scrub: true,
       pin: true,
-      anticipatePin: 1
+      anticipatePin: 1,
+      onLeave: () => {
+        // When scrolling past 300vh, set the position to the final state
+        gsap.set(".logo-utama", {
+          top: 500,
+          left: () => window.innerWidth - 380,
+          scale: 1
+        });
+      }
     }
   });
 
-  // Animasi 1: scroll dari 0 sampai 150vh
+  // Animation 1: scroll from 0 to 150vh
   tl.to(".logo-utama", {
     top: 300,
     left: () => window.innerWidth / 2 - 100,
@@ -379,7 +387,7 @@
     duration: 0.5
   });
 
-  // Animasi 2: scroll dari 150vh sampai 300vh
+  // Animation 2: scroll from 150vh to 300vh
   tl.to(".logo-utama", {
     top: 500,
     left: () => window.innerWidth - 380,
@@ -388,8 +396,5 @@
     duration: 0.5
   });
 </script>
-
-
-
 </body>
 </html>
