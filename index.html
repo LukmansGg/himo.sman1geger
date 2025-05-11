@@ -356,43 +356,26 @@
     <script src="interactive/refreshed.js"></script>
     <script src="interactive/loading_screen.js"></script>
     <script src="interactive/page_transition.js"></script>
-        <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-        // STAGE 1: Move to Center & Scale Up at 100vh
-        gsap.to(".logo-utama", {
-            top: 100, 
-            left: 0, // Move to center vertically
-            scale: 1, // Grow bigger
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: ".logo-utama",
-                start: "top 100", // When scroll reaches 150vh
-                end: "top 200",
-                onLeave: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: 300, duration: 1, ease: "power2.out" }),
-                onLeaveBack: () => gsap.to(".logo-utama", { scale: 1, top: 100, left: 0, duration: 1, ease: "power2.out" }),
-                pin: true
-            }
-        });
-
-        gsap.to(".logo-utama", {
-            scale: 2,
-            left: window.innerWidth / 2 - 100,
-            top: 300,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: ".logo-utama",
-                start: "top 0", // When scroll reaches 150vh
-                end: "top 200",
-                onLeave: () => gsap.to(".logo-utama", { scale: 1, left: window.innerWidth - 380, top: 500, duration: 1, ease: "power2.out" }),
-                onLeaveBack: () => gsap.to(".logo-utama", { scale: 2, left: window.innerWidth / 2 - 100, top: 300, duration: 1, ease: "power2.out" }),
-                pin: true
-            }
-        });
-
+    <script>
+          gsap.registerPlugin(ScrollTrigger);
         
-    </script>
+          
+          gsap.to(".logo-utama", {
+            top: 300,
+            left: () => window.innerWidth / 2 - 100, // Center horizontal
+            scale: 2,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".logo-utama",
+              start: "top center",       // Mulai saat elemen mencapai tengah layar
+              end: "+=400",              // Animasi berlangsung sepanjang 400px scroll
+              scrub: true,               // Sinkron dengan scroll (maju & mundur)
+              pin: true,                 // Pin elemennya selama animasi
+              anticipatePin: 1           // Smooth pinning
+            }
+          });
+</script>
+
 </body>
 </html>
