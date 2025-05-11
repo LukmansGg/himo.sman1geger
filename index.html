@@ -363,15 +363,17 @@
       trigger: ".logo-utama",
       start: "top top",
       end: "+=400vh",           // only up to 300vh scroll
-      scrub: true,
+      scrub: 1,                 // Smooth scrubbing
       pin: true,
       anticipatePin: 1,
       onLeave: () => {
         // When scrolling past 300vh, set the position to the final state
-        gsap.set(".logo-utama", {
+        gsap.to(".logo-utama", {
           top: 600,
           left: () => window.innerWidth - 380,
-          scale: 1
+          scale: 1,
+          duration: 1,
+          ease: "power3.out"     // Smoother easing
         });
       }
     }
@@ -382,8 +384,8 @@
     top: 300,
     left: () => window.innerWidth / 2 - 100,
     scale: 2,
-    ease: "power2.out",
-    duration: 0.5
+    ease: "power3.out",        // Smoother easing
+    duration: 1
   });
 
   // Animation 2: scroll from 150vh to 300vh
@@ -391,9 +393,10 @@
     top: 600,
     left: () => window.innerWidth - 380,
     scale: 1,
-    ease: "power2.out",
-    duration: 0.5
+    ease: "power3.out",        // Smoother easing
+    duration: 1
   });
 </script>
+
 </body>
 </html>
