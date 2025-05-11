@@ -12,17 +12,6 @@ const phoneHover = document.querySelector(".phone-menu");
 const phoneMenuNav = document.querySelector(".phone-menu-nav-bar");
 const phoneMenuArr = document.querySelector(".phone-menu-arrow");
 
-phoneHover.addEventListener("click", () => {
-  if (phoneHover.classList.contains("show_navigation_phone")) {
-    phoneHover.classList.remove("show_navigation_phone")
-    phoneMenuArr.classList.remove("phone-menu-arrow-active")
-    phoneMenuNav.style.visibility = "hidden";
-  } else {
-    phoneHover.classList.add("show_navigation_phone")
-    phoneMenuArr.classList.add("phone-menu-arrow-active")
-    phoneMenuNav.style.visibility = "visible";
-  }
-})
 
 const elements = document.querySelectorAll('.nav-bar');
 
