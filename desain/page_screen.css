@@ -13,8 +13,8 @@
 }
 
 .wave {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 0;
     left: 0;
     width: 100%;
     height: auto;
@@ -344,6 +344,7 @@
     z-index: 1;
     overflow: hidden;
     background: var(--background);
+    margin-bottom: 300px;
 }
 
 .foto_background {
