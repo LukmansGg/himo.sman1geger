@@ -1,13 +1,14 @@
 .letter-image {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 200px;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	cursor: pointer;
+    position: absolute;
+    bottom: -300px;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 .animated-mail {
