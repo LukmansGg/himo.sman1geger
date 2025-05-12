@@ -12,6 +12,26 @@
   --transition: 0.2s;
 }
 
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 5; /* Ensure it appears above the content */
+}
+
+.page-7 {
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.page-8 {
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 .context {
