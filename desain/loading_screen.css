@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-ar;
-    gap: 300px;
 }
 
 .home-page .box-title {
