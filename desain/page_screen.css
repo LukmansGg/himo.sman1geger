@@ -17,8 +17,6 @@
 .context {
     width: 100%;
     position: absolute;
-    top:50vh;
-    
 }
 
 .context h1{
@@ -26,7 +24,6 @@
     color: #fff;
     font-size: 50px;
 }
-
 
 .area{
     background: #4e54c8;  
