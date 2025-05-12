@@ -19,6 +19,7 @@
     width: 100%;
     height: auto;
     z-index: 5; /* Ensure it appears above the content */
+    animation: wave-animation 1s ease-in-out forwards;
 }
 
 .page-7 {
@@ -39,11 +40,6 @@
         transform: translateY(10px);
     }
 }
-
-.animate-wave {
-    animation: wave-animation 1s ease-in-out forwards;
-}
-
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
