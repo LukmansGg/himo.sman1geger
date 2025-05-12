@@ -31,6 +31,19 @@
     overflow: hidden; /* Prevent overflow */
 }
 
+@keyframes wave-animation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.animate-wave {
+    animation: wave-animation 1s ease-in-out forwards;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
